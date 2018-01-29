@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+    	<todo-progress></todo-progress>
+    	<todo-item-form></todo-item-form>
+			<todo-item
+				[appComplete] = todoItem.isComplete
+				[ngClass]=" {'complete-color-true':todoItem.isComplete, 'complete-color-false':!todoItem.isComplete}"
+				*ngFor = "let todoItem of todoItems"
+			  [todoItem] = "todoItem"
+			  (delete)="onToDoItemDelete($event)"
+			  (complete)="onToDoItemComplete($event)">
+			</todo-item>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</div>

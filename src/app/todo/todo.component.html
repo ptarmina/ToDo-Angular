@@ -1,0 +1,18 @@
+<section class="todo-item text-center">
+	<div class="item-btn complete-btn float-left" (click)=" toggleComplete(todoItem.isComplete = !todoItem.isComplete) " >
+		<div class="icon-wrapper" >
+			<span *ngIf="!todoItem.isComplete">
+				<i class="far fa-circle"></i>
+			</span>
+			<span *ngIf="todoItem.isComplete" >
+				<i class="fas fa-check-circle"></i>
+			</span>
+		</div>
+	</div>
+	<div class="todo-title">{{ todoItem.title }} </div>
+	<div class="item-btn delete-btn float-right" (click)="deleteTodo()" >
+		<div class="icon-wrapper">
+			<i class="fas fa-times"></i>
+		</div>
+	</div>
+</section>

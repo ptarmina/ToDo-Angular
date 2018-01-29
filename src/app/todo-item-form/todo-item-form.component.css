@@ -1,0 +1,22 @@
+form{
+	background-color: #fff;
+}
+
+.add-btn {
+	height: 48px;
+	width: 30px;
+	color: #fff;
+	background-color: #d0bc14;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+}
+input {
+	width: 92%;
+	height: 48px;
+	color: #000;
+	border:none;
+	padding: 0px 10px;
+	margin: 0px;
+  white-space: nowrap;
+}
